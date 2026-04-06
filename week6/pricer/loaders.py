@@ -33,6 +33,7 @@ class ItemLoader:
     def chunk_generator(self):
         """
         Iterate over the Dataset, yielding chunks of datapoints at a time
+        對資料集進行迭代，並逐次產生一個個資料區塊（chunks）。
         """
         size = len(self.dataset)
         for i in range(0, size, CHUNK_SIZE):
